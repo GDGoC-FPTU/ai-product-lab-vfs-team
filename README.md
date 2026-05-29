@@ -136,7 +136,7 @@ Sơ đồ trực quan hóa quy trình vận hành hiện tại trước khi có 
     *   Đánh dấu rõ các điểm chuyển giao thông tin giữa người-người hoặc người-hệ thống (🔄 **Handoff**).
     *   Ghi rõ thời gian xử lý trung bình ở mỗi bước và tổng thời gian của cả quy trình.
     *   Đánh dấu rõ ràng các bước là nút thắt cổ chai bằng biểu tượng hoặc màu đỏ (🔴 **Bottleneck**).
-    *   *Chụp ảnh sơ đồ rõ nét, không bị mờ/mất góc, lưu dưới định dạng `.png`, `.jpg` hoặc xuất `.pdf` rồi đặt vào repo.*
+    *   *Chụp ảnh sơ đồ rõ nét, không bị mờ/mất góc, lưu dưới định dạng `.png`, `.jpg` hoặc xuất `.pdf` rồi đặt vào repo.* 
 
 ### 📄 4. File `03-ai-log.md` (Bài cá nhân - 15 điểm)
 Nhật ký chiêm nghiệm về việc tương tác với AI (ChatGPT, Gemini, Claude...) trong suốt buổi học.
