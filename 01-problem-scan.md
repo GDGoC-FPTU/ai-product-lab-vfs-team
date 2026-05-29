@@ -16,11 +16,11 @@ Hãy sử dụng **4 Lenses** dưới đây để quét qua hoạt động vận
 ### 📝 List bài toán của tôi:
 | # | Subsidiary (VinFast/Xanh SM...) | Lens | Mô tả ngắn bài toán |
 |---|----------------------------------|------|---------------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+| 1 | VinFast | Lặp lại (Repetitive) | Kiểm tra chất lượng cuối dây chuyền dựa vào checklist thủ công và quan sát kỹ thuật viên, dễ bỏ sót lỗi nhỏ và tạo vòng lặp rework; benchmark ngành cho thấy chi phí scrap & rework ngốn ~2,2% doanh thu/năm — hàng chục triệu USD với OEM doanh thu tỉ đô. |
+| 2 | VinFast | Pain từ người khác (Stakeholder Pain) | Bảo trì nặng tính "chữa cháy" (chờ hỏng rồi sửa) gây dừng máy ngoài kế hoạch trên dây chuyền hàn-sơn-lắp ráp; downtime ngoài kế hoạch bốc hơi ~11% doanh thu/năm, chi phí trung bình 129 triệu USD/năm/nhà máy, riêng ngành ô tô mất ~2,3 triệu USD/giờ dừng sản xuất. |
+| 3 | VinFast | Tốn thời gian (Time-consuming) | Xử lý claim bảo hành EV (pin, powertrain) dựa vào đọc hồ sơ và tra cứu rời rạc, vòng đời xử lý dài; chi phí claim bảo hành EV cao hơn xe xăng 26–50%, thay pin toàn bộ tốn ~8.000–12.000 GBP/xe, tỉ lệ thay pack ~1–2% nhưng tổn thất rất lớn nếu không phát hiện sớm. |
+| 4 | VinFast | AI có thể tốt hơn (AI-upgrade) | Tổng đài/chat CSKH xử lý nhiều câu hỏi lặp bằng script rập khuôn và tra cứu thủ công; AHT trung bình 4–7 phút/cuộc (chuẩn ~6 phút 10 giây), tỉ lệ gọi lại cùng vấn đề 10–15%, kéo chi phí nhân sự tăng và CSAT giảm nếu không dùng AI agent & routing thông minh. |
+| 5 | VinFast | Lặp lại (Repetitive) | Kiểm tra xe trước bàn giao (PDI), bảo dưỡng định kỳ và sau sửa chữa theo checklist thao tác lặp, nhập liệu rời rạc; phiên kiểm tra kéo dài 30–60 phút/xe, nghiên cứu cho thấy có thể cắt ~18 phút/xe nếu chuẩn hóa — hàng nghìn giờ công/tháng đang bị "chôn" vào thao tác mà AI/vision có thể tự động hóa. |
 
 ---
 
