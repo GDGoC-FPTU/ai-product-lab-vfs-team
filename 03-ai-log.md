@@ -35,7 +35,7 @@ Kết quả là 10 bài toán vận hành tiêu biểu nhất đã được ch�
 
 ## 3. Quá trình sàng lọc từ 10 problem scan xuống 3 ticket tiềm năng
 
-Nhóm đã xây dựng một ma trận đánh giá dựa trên 3 tiêu chí chính với thang điểm từ 1 đ�| 6 | Cứu hộ sạc pin Xanh SM | 5 | 4 | 5 | 14/15 | Được chọn (Ticket 6) |
+Nhóm đã xây dựng một ma trận đánh giá dựa trên 3 tiêu chí chính với thang điểm từ 1 đ�| 6 | Cứu hộ sạc pin Xanh SM | 5 | 4 | 5 | 14/15 | Được chọn (Ticket 6) |
 | 7 | Bệnh án SOAP Vinmec | 4 | 2 | 2 | 8/15 | Loại |
 | 8 | Quản lý năng lượng Vinhomes | 3 | 3 | 3 | 9/15 | Loại |
 | 9 | Giám sát lái xe Xanh SM | 4 | 2 | 2 | 8/15 | Loại |
@@ -58,7 +58,7 @@ Quá trình thảo luận tập trung phản biện các điểm nghẽn thực 
 *   Mảng CSKH của Vinhomes được lựa chọn nhờ lượng ticket văn bản lặp đi lặp lại rất lớn và quy trình phối hợp của ban quản lý đã được chuẩn hóa rõ ràng, dễ dàng xây dựng mô hình thử nghiệm.
 *   Mảng điều phối của Xanh SM, đặc biệt là bài toán sạc khẩn cấp khi xe dưới 5% pin, được chọn vì đây là bài toán có ranh giới quy tắc rõ ràng, liên quan trực tiếp đến an toàn vận hành và hiệu suất đội xe dịch vụ thực tế.
 
-Kết quả, nhóm đã thống nhất chọn ra 3 bài toán tiềm năng nhất để đi vào bước phân tích sâu bao gồm: Ticket 1 (CSKH Vinhomes), Ticket 2 (Service Copilot VinFast) và Ticket 6 (Cứu hộ sạc pin Xanh SM).��c pin Xanh SM).hi chép SOAP cũng gặp rào cản rất lớn về bảo mật thông tin y tế và tiêu chuẩn FDA/Bộ Y tế. Chúng ta nên ưu tiên các bài toán có luồng quy trình vận hành thủ công rõ ràng và dễ dàng tiếp cận log vận hành như Vinhomes hoặc Xanh SM."
+Kết quả, nhóm đã thống nhất chọn ra 3 bài toán tiềm năng nhất để đi vào bước phân tích sâu bao gồm: Ticket 1 (CSKH Vinhomes), Ticket 2 (Service Copilot VinFast) và Ticket 6 (Cứu hộ sạc pin Xanh SM). chép SOAP cũng gặp rào cản rất lớn về bảo mật thông tin y tế và tiêu chuẩn FDA/Bộ Y tế. Chúng ta nên ưu tiên các bài toán có luồng quy trình vận hành thủ công rõ ràng và dễ dàng tiếp cận log vận hành như Vinhomes hoặc Xanh SM."
 *   Thắng: "Vậy tôi đề xuất bài toán số 1 (Phân loại ticket BQL Vinhomes). Đây là nghiệp vụ rất rõ ràng: mỗi ngày nhận hàng trăm ticket lặp về thang máy, gửi xe, nước. Log lịch sử ticket có sẵn, kiểu dữ liệu chủ yếu là văn bản, rất phù hợp cho mô hình ngôn ngữ."
 *   Nam: "Tôi bổ sung thêm 2 bài toán cực kỳ cấp thiết của Xanh SM là số 3 (Hỗ trợ tài xế đối soát lương thưởng) và số 6 (Điều phối cứu hộ sạc pin khẩn cấp). Trong đó bài toán số 6 là nỗi đau lớn nhất vì ảnh hưởng trực tiếp đến an toàn và hiệu suất đội xe. Khi tài xe hết pin dưới 5% giữa đường, họ phải gọi tổng đài, điều phối viên phải làm thủ công rất lâu, gây rủi ro xe chết máy."
 *   Hoàng: "Như vậy, qua khảo sát ban đầu về tính sẵn có dữ liệu và thời gian phản hồi, chúng ta thống nhất chọn ra 3 bài toán tiềm năng nhất để đưa vào stress-test nghiêm ngặt gồm:"
