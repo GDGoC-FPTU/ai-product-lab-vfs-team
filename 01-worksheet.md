@@ -133,7 +133,7 @@ Chọn **top 3 bài toán** từ danh sách trên và hoàn thiện **3 Quick Pr
   * ↩️ **Fallback:** Kế hoạch dự phòng khi LLM trả về kết quả lỗi hoặc không tự tin.
 
 ---
-
+ 
 # 💻 Phase 4 — TECHNICAL PROMPT PROTOTYPE (Nhóm, 30 min)
 
 Để đảm bảo kỹ sư của Vin Smart Future luôn giữ vững năng lực lập trình, nhóm của bạn sẽ tiến hành **lập trình bản mẫu prompt** trực tiếp trên **Gemini 2.5 Flash** bằng Python để stress-test hệ thống.
