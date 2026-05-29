@@ -35,21 +35,20 @@ Kết quả là 10 bài toán vận hành tiêu biểu nhất đã được ch�
 
 ## 3. Quá trình sàng lọc từ 10 problem scan xuống 3 ticket tiềm năng
 
-Nhóm đã xây dựng một ma trận đánh giá dựa trên 3 tiêu chí chính với thang điểm từ 1 đến 5 (5 là tốt nhất):
-*   Mức độ cấp thiết (Nêu nghẹn đầu, tổn thất hiệu suất lớn).
-*   Tính sẵn có của dữ liệu (Có sẵn dữ liệu log, thông tin vận hành để làm mock/test).
-*   Khả năng triển khai prototype (Khả thi để xây dựng prompt boundary và verify kết quả nhanh).
+Nhóm đã xây dựng một ma trận đánh giá dựa trên 3 tiêu chí chính với thang điểm từ 1 đ�| 6 | Cứu hộ sạc pin Xanh SM | 5 | 4 | 5 | 14/15 | Được chọn (Ticket 6) |
+| 7 | Bệnh án SOAP Vinmec | 4 | 2 | 2 | 8/15 | Loại |
+| 8 | Quản lý năng lượng Vinhomes | 3 | 3 | 3 | 9/15 | Loại |
+| 9 | Giám sát lái xe Xanh SM | 4 | 2 | 2 | 8/15 | Loại |
+| 10 | Dự báo phụ tùng VinFast | 4 | 3 | 3 | 10/15 | Loại |
 
-Ma trận đánh giá và cho điểm nội bộ của nhóm VFS Team:
+Lý do lọc ra 3 Ticket cao điểm nhất:
+*   Ticket 6 (Cứu hộ sạc pin Xanh SM - 14 điểm): Cao điểm nhất nhờ tính cấp thiết về an toàn tính mạng và kỹ thuật cực kỳ rõ ràng, dữ liệu định vị vận hành dễ dàng được giả lập thời gian thực.
+*   Ticket 1 (CSKH Vinhomes - 13 điểm): Dữ liệu dạng văn bản rất sẵn có và luồng vận hành của ban quản lý đã được chuẩn hóa từ trước, dễ dàng thiết lập LLM phân loại.
+*   Ticket 2 (Service Copilot VinFast - 12 điểm): Mặc dù điểm dữ liệu chỉ ở mức trung bình do tính bảo mật của VinFast, nhưng đây là pain point đặc biệt nghiêm trọng của dòng xe EV nên được nhóm giữ lại để phân tích chuyên sâu.
 
-| STT | Bài toán | Mức độ cấp thiết | Sẵn có dữ liệu | Tính khả thi | Tổng điểm | Trạng thái |
-|---|---|---|---|---|---|---|
-| 1 | CSKH Vinhomes | 4 | 5 | 4 | 13/15 | Được chọn (Ticket 1) |
-| 2 | Service Copilot VinFast | 5 | 3 | 4 | 12/15 | Được chọn (Ticket 2) |
-| 3 | Đối soát tài xế Xanh SM | 4 | 3 | 3 | 10/15 | Loại |
-| 4 | Kiểm tra rework VinFast | 4 | 2 | 3 | 9/15 | Loại |
-| 5 | Tổng đài hỗ trợ VinFast | 4 | 3 | 3 | 10/15 | Loại |
-| 6 | Cứu hộ sạc## 4. Nhật ký quá trình thảo luận chọn 3 bài toán từ danh sách 10 problem scan
+---
+
+## 4. Nhật ký quá trình thảo luận chọn 3 bài toán từ danh sách 10 problem scan
 
 Sau khi hoàn thành danh sách 10 bài toán, cả nhóm đã tiến hành họp bàn trực tiếp để cùng đánh giá và lựa chọn ra 3 bài toán triển vọng nhất.
 
@@ -59,7 +58,7 @@ Quá trình thảo luận tập trung phản biện các điểm nghẽn thực 
 *   Mảng CSKH của Vinhomes được lựa chọn nhờ lượng ticket văn bản lặp đi lặp lại rất lớn và quy trình phối hợp của ban quản lý đã được chuẩn hóa rõ ràng, dễ dàng xây dựng mô hình thử nghiệm.
 *   Mảng điều phối của Xanh SM, đặc biệt là bài toán sạc khẩn cấp khi xe dưới 5% pin, được chọn vì đây là bài toán có ranh giới quy tắc rõ ràng, liên quan trực tiếp đến an toàn vận hành và hiệu suất đội xe dịch vụ thực tế.
 
-Kết quả, nhóm đã thống nhất chọn ra 3 bài toán tiềm năng nhất để đi vào bước phân tích sâu bao gồm: Ticket 1 (CSKH Vinhomes), Ticket 2 (Service Copilot VinFast) và Ticket 6 (Cứu hộ sạc pin Xanh SM).hi chép SOAP cũng gặp rào cản rất lớn về bảo mật thông tin y tế và tiêu chuẩn FDA/Bộ Y tế. Chúng ta nên ưu tiên các bài toán có luồng quy trình vận hành thủ công rõ ràng và dễ dàng tiếp cận log vận hành như Vinhomes hoặc Xanh SM."
+Kết quả, nhóm đã thống nhất chọn ra 3 bài toán tiềm năng nhất để đi vào bước phân tích sâu bao gồm: Ticket 1 (CSKH Vinhomes), Ticket 2 (Service Copilot VinFast) và Ticket 6 (Cứu hộ sạc pin Xanh SM).��c pin Xanh SM).hi chép SOAP cũng gặp rào cản rất lớn về bảo mật thông tin y tế và tiêu chuẩn FDA/Bộ Y tế. Chúng ta nên ưu tiên các bài toán có luồng quy trình vận hành thủ công rõ ràng và dễ dàng tiếp cận log vận hành như Vinhomes hoặc Xanh SM."
 *   Thắng: "Vậy tôi đề xuất bài toán số 1 (Phân loại ticket BQL Vinhomes). Đây là nghiệp vụ rất rõ ràng: mỗi ngày nhận hàng trăm ticket lặp về thang máy, gửi xe, nước. Log lịch sử ticket có sẵn, kiểu dữ liệu chủ yếu là văn bản, rất phù hợp cho mô hình ngôn ngữ."
 *   Nam: "Tôi bổ sung thêm 2 bài toán cực kỳ cấp thiết của Xanh SM là số 3 (Hỗ trợ tài xế đối soát lương thưởng) và số 6 (Điều phối cứu hộ sạc pin khẩn cấp). Trong đó bài toán số 6 là nỗi đau lớn nhất vì ảnh hưởng trực tiếp đến an toàn và hiệu suất đội xe. Khi tài xe hết pin dưới 5% giữa đường, họ phải gọi tổng đài, điều phối viên phải làm thủ công rất lâu, gây rủi ro xe chết máy."
 *   Hoàng: "Như vậy, qua khảo sát ban đầu về tính sẵn có dữ liệu và thời gian phản hồi, chúng ta thống nhất chọn ra 3 bài toán tiềm năng nhất để đưa vào stress-test nghiêm ngặt gồm:"
