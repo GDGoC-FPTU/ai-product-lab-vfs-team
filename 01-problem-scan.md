@@ -16,12 +16,12 @@ Hãy sử dụng **4 Lenses** dưới đây để quét qua hoạt động vận
 ### 📝 List bài toán của tôi:
 | # | Subsidiary (VinFast/Xanh SM...) | Lens | Mô tả ngắn bài toán |
 |---|----------------------------------|------|---------------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-
+| 1 | VinFast | Tốn thời gian | Dự báo thiếu hụt vật tư sản xuất (MRP) để tự động kích hoạt lệnh mua hàng, giảm thời gian chết của dây chuyền. |
+| 2 | Xanh SM | Pain từ người khác | Nhận diện mạng lưới trục lợi cuốc xe ảo (Fraud Detection) qua đồ thị tương tác giữa tài xế và khách hàng. |
+| 3 | Vinhomes | Lặp lại | Tự động phân loại và định tuyến hàng nghìn ticket yêu cầu/phàn nàn của cư dân trên App về đúng bộ phận phụ trách. |
+| 4 | Vinmec | AI có thể tốt hơn | Trích xuất thực thể (NER) và số hóa tự động các chỉ số từ phiếu xét nghiệm giấy đổ thẳng vào hệ thống hồ sơ bệnh án điện tử (HIS). |
+| 5 | Vincom Retail | Lặp lại | Phân cụm hành vi chi tiêu đa kênh của khách hàng (Customer Segmentation) để cá nhân hóa hoàn toàn các voucher khuyến mãi. |
+| 6 | Vinhomes | Pain từ người khác | Bảo trì dự đoán (Predictive Maintenance) cho hệ thống lõi (thang máy, trạm bơm) dựa trên dữ liệu cảm biến IoT để ngăn chặn hỏng hóc đột xuất. |
 ---
 
 # 🃏 Phase 2 — QUICK-ASSESS (Cá nhân, 30 min)
@@ -30,24 +30,75 @@ Chọn **top 3 bài toán** từ danh sách trên và hoàn thiện **3 Quick Pr
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ QUICK PROBLEM CARD #___                                     │
+│ QUICK PROBLEM CARD #1                                       │
 │                                                             │
-│ Bài toán (1 câu): ________________________________________  │
-│ Công ty thành viên: [ ] VinFast  [ ] Xanh SM  [ ] Vinhomes  │
+│ Bài toán (1 câu): Nhận diện mạng lưới trục lợi cuốc xe ảo   │
+│ qua phân tích đồ thị tương tác tài xế - khách hàng.         │
+│ Công ty thành viên: [ ] VinFast  [x] Xanh SM  [ ] Vinhomes  │
 │                     [ ] Vinmec   [ ] Khác (Ghi rõ)________  │
 │                                                             │
-│ Ai đang đau (Actor)? ______________________________________ │
+│ Ai đang đau (Actor)? Bộ phận chống gian lận (Risk) & Tài xế │
 │                                                             │
 │ Workflow thủ công hiện tại (3-5 bước):                      │
-│   1. ___ ──> 2. ___ ──> 3. ___ ──> 4. ___                   │
+│   1. Nhận alert rule tĩnh ──> 2. Kéo log chuyến đi ──>      │
+│   3. Kẻ bảng pivot dò trùng IP/Device ──> 4. Khóa tài khoản │
 │                                                             │
-│ Bước nào tốn thời gian/lỗi nhất? ___ (⏱ ___ phút/lượt)      │
-│ AI có thể nhảy vào hỗ trợ ở bước nào? _____________________ │
+│ Bước nào tốn thời gian/lỗi nhất? Bước 3 ( 45 phút/lượt)     │
+│ AI có thể nhảy vào hỗ trợ ở bước nào? Dùng Graph Models quét│
+│ tự động toàn bộ mạng lưới và chấm điểm rủi ro real-time.    │
 │                                                             │
-│ Đo thành công bằng gì (Metric có số)? ______________________ │
-│   VD: "Giảm thời gian soạn phản hồi từ 10 min ──> under 2 min"│
+│ Đo thành công bằng gì (Metric có số)?                       │
+│   "Giảm thời gian rà soát từ 45 min ──> under 5 min/case"   │
 │                                                             │
-│ Quick Architecture: [ ] No AI  [ ] Rule  [ ] LLM  [ ] Agent │
+│ Quick Architecture: [ ] No AI  [ ] Rule  [ ] LLM  [x] ML    │
+└─────────────────────────────────────────────────────────────┘
+```
+┌─────────────────────────────────────────────────────────────┐
+│ QUICK PROBLEM CARD #2                                       │
+│                                                             │
+│ Bài toán (1 câu): Dự báo nhu cầu vật tư (MRP) để tự động    │
+│ kích hoạt lệnh mua hàng (PO), tránh dừng chuyền sản xuất.   │
+│ Công ty thành viên: [x] VinFast  [ ] Xanh SM  [ ] Vinhomes  │
+│                     [ ] Vinmec   [ ] Khác (Ghi rõ)________  │
+│                                                             │
+│ Ai đang đau (Actor)? Nhân viên Mua hàng & Quản lý Kho       │
+│                                                             │
+│ Workflow thủ công hiện tại (3-5 bước):                      │
+│   1. Kéo tồn kho ERP ──> 2. Khớp lệnh sản xuất ──>          │
+│   3. Tính lượng vật tư thiếu ──> 4. Lên nháp PO trình ký    │
+│                                                             │
+│ Bước nào tốn thời gian/lỗi nhất? Bước 2&3 ( 120 phút/lượt)  │
+│ AI có thể nhảy vào hỗ trợ ở bước nào? Phân tích Time-series │
+│ dự báo tồn kho tối thiểu và tự động gen nháp lệnh PO.       │
+│                                                             │
+│ Đo thành công bằng gì (Metric có số)?                       │
+│   "Giảm tỷ lệ thiếu hụt linh kiện (Stockout) xuống dưới 1%" │
+│                                                             │
+│ Quick Architecture: [ ] No AI  [ ] Rule  [ ] LLM  [x] ML    │
+└─────────────────────────────────────────────────────────────┘
+```
+┌─────────────────────────────────────────────────────────────┐
+│ QUICK PROBLEM CARD #3                                       │
+│                                                             │
+│ Bài toán (1 câu): Bảo trì dự đoán hệ thống lõi (thang máy,  │
+│ trạm bơm) dựa trên dữ liệu IoT để ngăn hỏng hóc đột xuất.   │
+│ Công ty thành viên: [ ] VinFast  [ ] Xanh SM  [x] Vinhomes  │
+│                     [ ] Vinmec   [ ] Khác (Ghi rõ)________  │
+│                                                             │
+│ Ai đang đau (Actor)? Ban quản lý tòa nhà, Kỹ sư trưởng      │
+│                                                             │
+│ Workflow thủ công hiện tại (3-5 bước):                      │
+│   1. Cư dân báo lỗi ──> 2. Phân công thợ ──> 3. Kiểm tra    │
+│   chẩn đoán tại chỗ ──> 4. Dừng hoạt động để sửa chữa       │
+│                                                             │
+│ Bước nào tốn thời gian/lỗi nhất? Bước 3 ( 60 phút/lượt)     │
+│ AI có thể nhảy vào hỗ trợ ở bước nào? Cảnh báo bất thường   │
+│ (Anomaly Detection) trước 24h dựa trên luồng data cảm biến. │
+│                                                             │
+│ Đo thành công bằng gì (Metric có số)?                       │
+│   "Giảm downtime của thiết bị lõi từ 4h/tháng ──> <1h/tháng"│
+│                                                             │
+│ Quick Architecture: [ ] No AI  [ ] Rule  [ ] LLM  [x] ML    │
 └─────────────────────────────────────────────────────────────┘
 ```
 
