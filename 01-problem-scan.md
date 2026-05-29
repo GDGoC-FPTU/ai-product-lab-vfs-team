@@ -1,6 +1,6 @@
-# 🔍 Phase 1 — SCAN (Cá nhân, 20 min)
+# Phase 1 — SCAN (Cá nhân, 20 min)
 
-### 📝 List bài toán của tôi:
+### List bai toan cua toi:
 | # | Subsidiary (VinFast/Xanh SM...) | Lens | Mô tả ngắn bài toán |
 |---|----------------------------------|------|---------------------|
 | 1 | Vinhomes | Pain từ người khác (Stakeholder Pain) | CSKH cư dân: phân loại ticket & phản hồi khiếu nại. Mỗi ngày nhận ticket về thang máy, nước, điện, gửi xe, tiếng ồn, an ninh, phí dịch vụ — nhiều nội dung lặp. Nhân viên phải đọc, phân loại, tra lịch sử căn hộ, soạn phản hồi, chuyển đúng bộ phận. Cư dân phàn nàn phản hồi chậm, bị chuyển lòng vòng, trả lời mẫu; nhân viên CSKH quá tải giờ cao điểm. AI agent có thể đọc intent, xác định mức khẩn cấp, soạn phản hồi cá nhân hóa, tự route cho BQL/kỹ thuật/bảo vệ. |
@@ -16,7 +16,7 @@
 
 ---
 
-# 🃏 Phase 2 — QUICK-ASSESS (Cá nhân, 30 min)
+# Phase 2 — QUICK-ASSESS (Cá nhân, 30 min)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -116,7 +116,7 @@
 ```
 
 > [!TIP]
-> **🤖 AI Prompts — Stress-Test thẻ bài toán:**
+> **AI Prompts — Stress-Test the bai toan:**
 > Hãy dán nội dung thẻ bài toán của bạn vào LLM để nhận phản biện:
 > *"Đây là một thẻ bài toán vận hành tôi đề xuất cho Vin Smart Future: [Dán nội dung]. Hãy đóng vai trò là một CFO và Trưởng phòng Vận hành cực kỳ khắt khe, chỉ ra cho tôi 3 điểm yếu về logic, metric, và giải thích vì sao rule-based code thông thường có thể giải quyết bài toán này tốt hơn là dùng AI."*
 
