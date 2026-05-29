@@ -16,10 +16,9 @@ Hãy sử dụng **4 Lenses** dưới đây để quét qua hoạt động vận
 ### 📝 List bài toán của tôi:
 | # | Subsidiary (VinFast/Xanh SM...) | Lens | Mô tả ngắn bài toán |
 |---|----------------------------------|------|---------------------|
-| 1 | Vinhomes | Repetitive | QA, nhà thầu hiện tại đang phải check tiến độ công trình, báo cáo hàng ngày|
-| 2 | Vinhomes| Repetitive | Mỗi ngày nhận ticket về thang máy, nước, điện, gửi xe, tiếng ồn, an ninh, phí dịch vụ. Nhiều nội dung lặp lại.
-Nhân viên phải đọc, phân loại, tra lịch sử căn hộ, soạn phản hồi, chuyển đúng bộ phận. |
-| 3 |  | | |
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
 | 4 | | | |
 | 5 | | | |
 
